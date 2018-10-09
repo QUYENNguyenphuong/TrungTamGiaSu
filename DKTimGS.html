@@ -37,291 +37,286 @@
     	<div class="main_trangchu_left">
        			<section id="container">
                 <h2 class="tieudeh2"> Đăng Kí Tìm Gia Sư </h2>
-                <form class="formdk" name="formdk"  method="post"  >
+                <form action="PHPTimGS.php" class="formdk" name="formdk"  method="post"  >
                 
                 <table class="tblform" border="0px" width="600px"  >
-                 	<!--Họ tên -->
+                 <!--Họ tên -->
             	 <tr class="row">
                  <td width="100" class="row_left" >
                  Họ tên (<span style="color:#F00">*</span>):
                  </td>
-                 <td class="row_right"><span><input type="text" size="20" id="ho" name="ho" placeholder=" Nguyễn Văn"  /></span> <span><input type="text" size="10" id="ten" name="ten" placeholder="An"  /></span></td>
+                 <td class="row_right"><span><input type="text" size="20" id="ho" name="txtho" placeholder=" Nguyễn Văn"  /></span> <span><input type="text" size="10" id="ten" name="txtten" placeholder="An"  /></span></td>
                  </tr>         
                
-                 	<!-- Địa chỉ hiện tại-->
-                 	<tr class="row" >
-                 <td width="100" class="row_left" >Địa chỉ hiện tại (<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" ><input type="text" size="40" id="diachihientai" name="diachihientai" /></td>
+                 <!-- Địa chỉ hiện tại-->
+                 <tr class="row" >
+                 <td class="row_left" >Địa chỉ hiện tại (<span style="color:#F00">*</span>): </td>
+                 <td class="row_right" ><input type="text" size="40" id="diachihientai" name="txtdiachihientai" /></td>
                  </tr>
                  
-                	<!-- Số điện thoại-->
-                 	<tr class="row" >
-                 <td width="100" class="row_left" >Số điện thoại (<span style="color:#F00">*</span>):</td>
-                 <td class="row_right" >	<input type="text" size="20" id="sodienthoai" name="sodienthoai" /></td>
+                 <!-- Số điện thoại-->
+                 <tr class="row" >
+                 <td class="row_left" >Số điện thoại (<span style="color:#F00">*</span>):</td>
+                 <td class="row_right" >	<input type="text" size="20" id="sodienthoai" name="txtsodienthoai" /></td>
                  </tr>
                  
-                 	<!-- Email -->
-                 	<tr class="row" >
-                 <td width="100" class="row_left" >Email (<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" ><input type="text" size="20" id="email" name="email" /></td>
+                 <!-- Email -->
+                 <tr class="row" >
+                 <td class="row_left" >Email (<span style="color:#F00">*</span>): </td>
+                 <td class="row_right" ><input type="text" size="20" id="email" name="txtemail" /></td>
                  </tr>
                  
                 
                  <!-- Lớp học -->
                  <tr class="row" >
-                 <td width="100" class="row_left" >Lớp học(<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" >                    <table border="0" style="font-weight:bold; width:400px" id="tblCheckLop">
+                 <td class="row_left" >Lớp học(<span style="color:#F00">*</span>): </td>
+                 <td class="row_right"><table border="0" style="font-weight:bold; width:400px" id="tblCheckLop">
                     <tbody>
                     <tr>
                     	<td>
-                        	<input type="checkbox" value="1" id="checklop" />
+                        	<input type="checkbox" value="1" id="checklop1" name="txtlophoc"/>
                             <label for>Lớp 1</label>
                         </td>
                         <td>
-                        <input type="checkbox" value="2" id="checklop" />
+                        <input type="checkbox" value="2" id="checklop2" name="txtlophoc"/>
                             <label for>Lớp 2</label>
                         </td>
                         <td>
-                        <input type="checkbox" value="3" id="checklop" />
+                        <input type="checkbox" value="3" id="checklop3" name="txtlophoc"/>
                             <label for>Lớp 3</label>
                         </td>
                     </tr>
                     <tr>
-                    	<td><input type="checkbox" name="checklop" id="checklop" value="4"/>
+                    	<td><input type="checkbox" name="txtlophoc" id="checklop4" value="4"/>
                                 <label for >Lớp 4</label>
-</td>
-                        <td>                                <input type="checkbox" name="checklop" id="checklop" value="5"/>
+						</td>
+                        <td><input type="checkbox" name="txtlophoc" id="checklop5" value="5"/>
                                 <label for >Lớp 5</label>
 
                         </td>
-                        <td>                                <input type="checkbox" name="checklop" id="checklop" value="6"/>
+                        <td><input type="checkbox" name="txtlophoc" id="checklop6" value="6"/>
                                 <label for > Lớp 6</label>
 
                         </td>
                     </tr>
                     <tr>
-                    <td>                                <input type="checkbox" name="checklop" id="checklop" value="7"/>
+                    	<td><input type="checkbox" name="txtlophoc" id="checklop7" value="7"/>
                                 <label for > Lớp 7</label>
-</td>
-                    <td>                                <input type="checkbox" name="checklop" id="checklop" value="8"/>
+						</td>
+                    	<td><input type="checkbox" name="txtlophoc" id="checklop8" value="8"/>
                                 <label for > Lớp 8</label>
-</td>
-                    <td>                                <input type="checkbox" name="checklop" id="checklop" value="9"/>
+						</td>
+                    	<td><input type="checkbox" name="txtlophoc" id="checklop9" value="9"/>
                                 <label for > Lớp 9</label>
-</td>
+						</td>
                     </tr>
                     <tr>
-                    <td>                                <input type="checkbox" name="checklop" id="checklop" value="10"/>
+                    	<td><input type="checkbox" name="txtlophoc" id="checklop10" value="10"/>
                                 <label for > Lớp 10</label>
-</td>
-                    <td>                                <input type="checkbox" name="checklop" id="checklop" value="11"/>
+						</td>
+                    	<td><input type="checkbox" name="txtlophoc" id="checklop11" value="11"/>
                                 <label for > Lớp 11</label>
-</td>
-                    <td>                                <input type="checkbox" name="checklop" id="checklop" value="12"/>
+						</td>
+                    	<td><input type="checkbox" name="txtlophoc" id="checklop12" value="12"/>
                                 <label for > Lớp 12</label>
-</td>
+						</td>
                     </tr>
                     <tr>
-                    <td>                                <input type="checkbox" name="checklop" id="checklop" value="13"/>
+                    	<td><input type="checkbox" name="txtlophoc" id="checklopDaiHoc" value="13"/>
                                 <label for > Lớp Ôn Thi Đại Học</label>
-</td>
-                    <td>                                <input type="checkbox" name="checklop" id="checklop" value="14"/>
+						</td>
+                    	<td><input type="checkbox" name="txtlophoc" id="checklopNgoaiNgu" value="14"/>
                                 <label for > Lớp Ngoại Ngữ</label>
-</td>
-                    <td>                                <input type="checkbox" name="checklop" id="checklop" value="15"/>
+						</td>
+                    	<td><input type="checkbox" name="txtlophoc" id="checklopNangKhieu" value="15"/>
                                 <label for >Lớp Năng Khiếu</label>
-</td>
+						</td>
                     </tr>
                     </tbody>
                     </table>
-</td>
+					</td>
                  </tr>
                  
                  <!-- Số lượng người học -->
-                 <td width="100" class="row_left" >Số người học (<span style="color:#F00">*</span>): </td>
+                 <td class="row_left" >Số người học (<span style="color:#F00">*</span>): </td>
                  <td class="row_right" ><input type="text" size="20" id="SoLuong" name="SoLuong" /></td>
                  </tr>
                  
                  <!-- Môn học -->
                  <tr class="row" >
-                 <td width="100" class="row_left" >Môn học(<span style="color:#F00">*</span>): </td>
+                 <td class="row_left" >Môn học(<span style="color:#F00">*</span>): </td>
                  <td class="row_right" ><table border="0" style="font-weight:bold; width:400px" id="tblCheckMon">
                     <tbody>
                     <tr>
                     	<td>
-                        	<input type="checkbox" value="1" id="checkmon" />
+                        	<input type="checkbox" value="1" id="checkmonToan" name="txtmonhoc" />
                             <label for>Toán</label>
                         </td>
                         <td>
-                        <input type="checkbox" value="2" id="checkmon" />
+                        <input type="checkbox" value="2" id="checkmonLy" name="txtmonhoc"/>
                             <label for>Lý</label>
                         </td>
                         <td>
-                        <input type="checkbox" value="3" id="checkmon" />
+                        <input type="checkbox" value="3" id="checkmonHoa" name="txtmonhoc"/>
                             <label for>Hóa</label>
                         </td>
                     </tr>
                     <tr>
-                    	<td><input type="checkbox" name="checkmon" id="checkmon" value="4"/>
+                    	<td><input type="checkbox" name="txtmonhoc" id="checkmonVan" value="4"/>
                                 <label for > Ngữ Văn</label>
-</td>
-                        <td>                                <input type="checkbox" name="checkmon" id="checkmon" value="5"/>
+						</td>
+                        <td><input type="checkbox" name="txtmonhoc" id="checkmonTiengViet" value="5"/>
                                 <label for > Tiếng Việt</label>
 
                         </td>
-                        <td>                                <input type="checkbox" name="checkmon" id="checkmon" value="6"/>
+                        <td><input type="checkbox" name="txtmonhoc" id="checkmonAnh" value="6"/>
                                 <label for > Anh Văn</label>
-
                         </td>
                     </tr>
                     <tr>
-                    <td>                                <input type="checkbox" name="checkmon" id="checkmon" value="7"/>
+                   	 	<td><input type="checkbox" name="txtmonhoc" id="checkmonBaoBai" value="7"/>
                                 <label for > Báo Bài</label>
-</td>
-                    <td>                                <input type="checkbox" name="checkmon" id="checkmon" value="8"/>
+						</td>
+                    	<td><input type="checkbox" name="txtmonhoc" id="checkmonSinh" value="8"/>
                                 <label for > Sinh</label>
-</td>
-                    <td>                                <input type="checkbox" name="checkmon" id="checkmon" value="9"/>
+						</td>
+                    	<td><input type="checkbox" name="txtmonhoc" id="checkmonSu" value="9"/>
                                 <label for > Sử</label>
-</td>
+						</td>
                     </tr>
                     <tr>
-                    <td>                                <input type="checkbox" name="checkmon" id="checkmon" value="10"/>
+                    	<td><input type="checkbox" name="txtmonhoc" id="checkmonDia" value="10"/>
                                 <label for > Địa</label>
-</td>
-                    <td>                                <input type="checkbox" name="checkmon" id="checkmon" value="11"/>
+						</td>
+                    	<td><input type="checkbox" name="txtmonhoc" id="checkmonTin" value="11"/>
                                 <label for > Tin Học</label>
-</td>
-                    <td>                                <input type="checkbox" name="checkmon" id="checkmon" value="12"/>
+						</td>
+                    	<td><input type="checkbox" name="txtmonhoc" id="checkmonMyThuat" value="12"/>
                                 <label for > Mỹ Thuật</label>
-</td>
+						</td>
                     </tr>
                     <tr>
-                    <td>                                <input type="checkbox" name="checkmon" id="checkmon" value="13"/>
+                    	<td><input type="checkbox" name="txtmonhoc" id="checkmonNhat" value="13"/>
                                 <label for > Tiếng Nhật</label>
-</td>
-                    <td>                                <input type="checkbox" name="checkmon" id="checkmon" value="14"/>
+						</td>
+                    	<td><input type="checkbox" name="txtmonhoc" id="checkmonHan" value="14"/>
                                 <label for > Tiếng Hàn</label>
-</td>
-                    <td>                                <input type="checkbox" name="checkmon" id="checkmon" value="15"/>
+						</td>
+                    	<td><input type="checkbox" name="txtmonhoc" id="checkmonDan" value="15"/>
                                 <label for > Đàn</label>
-</td>
+						</td>
                     </tr>
                     </tbody>
                     </table>
-</td>
+					</td>
                  </tr>
                  
 				 <!-- Học lực hiện tại -->
-                 <td width="100" class="row_left" >Học lực hiện tại : </td>
+                 <td class="row_left" >Học lực hiện tại : </td>
                  <td class="row_right" ><input type="text" size="20" id="HocLucHienTai" name="HocLucHienTai" /></td>
                  </tr>
                  
                  <!-- Thời gian học -->
                  <tr class="row" >
-                 <td width="100" class="row_left" >Thời gian học(<span style="color:#F00">*</span>): </td>
+                 <td class="row_left" >Thời gian học(<span style="color:#F00">*</span>): </td>
                  <td class="row_right" >                    <table border="0" style="font-weight:bold; width:400px" id="tblCheckThoigian">
                     <tbody>
                     <tr>
-                    	<td>
-                        	<input type="checkbox" value="1" id="checktime" />
+                    	<td><input type="checkbox" value="1" name="txtthoigianhoc" id="checktime2S" />
                             <label for>Thứ 2- B.Sáng</label>
                         </td>
-                        <td>
-                        <input type="checkbox" value="2" id="checktime" />
+                        <td><input type="checkbox" value="2" name="txtthoigianhoc" id="checktime2C" />
                             <label for>Thứ 2- B.Chiều</label>
                         </td>
-                        <td>
-                        <input type="checkbox" value="3" id="checktime" />
+                        <td><input type="checkbox" value="3" name="txtthoigianhoc" id="checktime2T" />
                             <label for>Thứ 2- B.Tối</label>
                         </td>
                     </tr>
                     <tr>
-                    	<td><input type="checkbox" name="checktime" id="checktime" value="4"/>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktime3S" value="4"/>
                                 <label for >Thứ 3- B.Sáng</label>
-</td>
-                        <td>                                <input type="checkbox" name="checktime" id="checktime" value="5"/>
+						</td>
+                        <td><input type="checkbox" name="txtthoigianhoc" id="checktime3C" value="5"/>
                                 <label for >Thứ 3- B.Chiều</label>
-
                         </td>
-                        <td>                                <input type="checkbox" name="checktime" id="checktime" value="6"/>
+                        <td><input type="checkbox" name="txtthoigianhoc" id="checktime3T" value="6"/>
                                 <label for >Thứ 3- B.Tối</label>
-
                         </td>
                     </tr>
                     <tr>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="7"/>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktime4S" value="7"/>
                                 <label for >Thứ 4- B.Sáng</label>
-</td>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="8"/>
+						</td>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktime4C" value="8"/>
                                 <label for >Thứ 4- B.Chiều</label>
-</td>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="9"/>
+						</td>
+                   	 	<td><input type="checkbox" name="checktime" id="checktime4T" value="9"/>
                                 <label for>Thứ 4- B.Tối</label>
-</td>
+						</td>
                     </tr>
                     <tr>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="10"/>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktime5S" value="10"/>
                                 <label for >Thứ 5- B.Sáng</label>
-</td>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="11"/>
+						</td>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktime5C" value="11"/>
                                 <label for >Thứ 5- B.Chiều</label>
-</td>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="12"/>
+						</td>
+                   		<td><input type="checkbox" name="txtthoigianhoc" id="checktime5T" value="12"/>
                                 <label for > Thứ 5- B.Tối</label>
-</td>
+						</td>
                     </tr>
                     <tr>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="13"/>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktime6S" value="13"/>
                                 <label for >Thứ 6- B.Sáng</label>
-</td>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="14"/>
+						</td>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktime6C" value="14"/>
                                 <label for >Thứ 6- B.Chiều</label>
-</td>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="15"/>
+						</td>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktime6T" value="15"/>
                                 <label for> Thứ 6- B.Tối</label>
-</td>
+						</td>
                     </tr>
-                     <tr>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="13"/>
+                    <tr>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktime7S" value="13"/>
                                 <label for >Thứ 7- B.Sáng</label>
-</td>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="14"/>
+						</td>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktime7C" value="14"/>
                                 <label for >Thứ 7- B.Chiều</label>
-</td>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="15"/>
+						</td>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktime7T" value="15"/>
                                 <label for> Thứ 7- B.Tối</label>
-</td>
+						</td>
                     </tr>
-                     <tr>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="13"/>
+                    <tr>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktimeCnS" value="13"/>
                                 <label for >CN- B.Sáng</label>
-</td>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="14"/>
+						</td>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktimeCnC" value="14"/>
                                 <label for >CN- B.Chiều</label>
-</td>
-                    <td>                                <input type="checkbox" name="checktime" id="checktime" value="15"/>
+						</td>
+                    	<td><input type="checkbox" name="txtthoigianhoc" id="checktimeCnT" value="15"/>
                                 <label for>CN- B.Tối</label>
-</td>
+						</td>
                     </tr>
                    
                     </tbody>
                     </table>
-</td>
+					</td>
                  </tr>
                  
                  <!-- Yêu cầu khác-->
                  <tr class="row" >
-                 <td width="100" class="row_left" >Yêu cầu khác: </td>
+                 <td class="row_left" >Yêu cầu khác: </td>
                  <td class="row_right" ><textarea id="uudiem" rows="5" cols="50" name="uudiem" placeholder="Yêu cầu khác" class="uudiem" ></textarea></td>
                  </tr>
                  <!-- Submit -->
-                   <tr class="row" >
+                  <!-- <tr class="row" >
                  <td class="row_left"></td>
                  <td class="row_right"><input type="submit" id="Submit" value="Đăng Ký" style="background:#03F"/></td>
-                 </tr>
+                 </tr> -->
                    
                 </table> 
+                <input type="submit" value="Đăng Ký" class="btn_submit"/>
                 </form>
                 </section>     
   </div> <!-- div left -->

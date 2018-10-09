@@ -36,144 +36,145 @@ body,td,th {
     </div>
 <div class="main_trangchu_left">
     	<div id="left">
-       			<section id="container">
-                
+       			<section id="container">   
                 <h2 class="tieudeh2"> Đăng Kí Làm Gia Sư </h2>
-                <form class="form_acc" name="form_acc" method="post">
-                        <ul class="content_form_acc">
-                            <li>
-                                <div class="name"> Tên tài khoản: </div>
-                                <input type="text" class="name_acc" name='txtAcc'id="name_acc" size="30"/>
-                            </li>
-                            <li>
-                                <div class="password">Mật khẩu tài khoản: </div>
-                                <input type="password" class="pass_acc" name="txtPass" id="pass_acc" size="30"/>
-                            </li>
-                            <li><input type="submit" class="btn_dk" value="Đăng kí"/></li>
-                        </ul>
-                    </form>
+                <form action="PHPLamGS.php" >
+                 <form class="form_acc" name="form_acc" method="post">
+                    <ul class="content_form_acc">
+                       <li>
+                          <div class="name"> Tên tài khoản: </div>
+                                <input type="text" class="name_acc" name='txttendangnhap'id="name_acc" size="30"/>
+                       </li>
+                       <li>
+                           <div class="password">Mật khẩu tài khoản: </div>
+                                <input type="password" class="pass_acc" name="txtmatkhau" id="pass_acc" size="30"/>
+                       </li>
+                       <li><input type="submit" class="btn_dk" value="Đăng kí"/></li>
+                     </ul>
+                </form>
+                
                 <form class="formdk" name="formdk"  method="post"  >
 
                  <table class="tblform" border="0px" width="600px"  >
-
-                     <!--Họ tên -->
-                     <tr class="row">
-                         <td class="row_left" >
-                             Họ tên (<span style="color:#F00">*</span>):
-                         </td>
-                         <td class="row_right"><span><input type="text" size="20" id="ho" name="txtho" placeholder=" Nguyễn Văn"  /></span> <span><input type="text" size="10" id="ten" name="txtten" placeholder="An"  /></span></td>
-                     </tr>
-
-                     <!-- Giới tính -->
-                     <tr class="row" >
-                         <td class="row_left" >Giới tính (<span style="color:#F00">*</span>): </td>
-                         <td class="row_right" ><select name="txttioitinh"  id="gioitinh">
-                             <option value="Nam" >Nam</option>
-                             <option value="Nữ"> Nữ</option>
-                             <option value="Khac">Khác</option>
-                         </select>
-                         </td>
-                     </tr>
-
-                     <!-- Ngày Sinh -->
-                     <tr class="row" >
-                         <td class="row_left" >Ngày sinh (<span style="color:#F00">*</span>): </td>
-                         <td class="row_right"><input type="date" name="txtngaysinh" id="NgaySinh" /></td>
-                     </tr>
-
-
-                     <!-- Số điện thoại-->
-                     <tr class="row" >
-                         <td class="row_left" >Số điện thoại (<span style="color:#F00">*</span>):</td>
-                         <td class="row_right" >	<input type="text" size="20" id="sodienthoai" name="txtsodienthoai" /></td>
-                     </tr>
-
-                     <!-- Số cmnd -->
-                     <tr class="row" >
-                         <td class="row_left" >Số cmnd (<span style="color:#F00">*</span>): </td>
-                         <td class="row_right"><input type="text" size="20" name="txtcmnd" id="Socmnd" /></td>
-                     </tr>
-
-                     <!-- Ảnh thẻ -->
-                     <tr class="row" >
-                         <td  class="row_left" >Ảnh thẻ (<span style="color:#F00">*</span>): </td>
-                         <td class="row_right" ><input type="file" name="txtanhthe" id="anhthe" /> </td>
-                     </tr>
-
-                     <!-- Email -->
-                     <tr class="row" >
-                         <td class="row_left" >Email (<span style="color:#F00">*</span>): </td>
-                         <td class="row_right" ><input type="text" size="20" id="email" name="txtemail" /></td>
-                     </tr>
-
-                     <!-- Địa chỉ hiện tại-->
-                     <tr class="row" >
-                         <td class="row_left" >Địa chỉ hiện tại (<span style="color:#F00">*</span>): </td>
-                         <td class="row_right" ><input type="text" size="40" id="diachihientai" name="txtdiachihientai" /></td>
-                     </tr>
-
-                     <!-- Nguyên Quán -->
-                     <tr class="row" >
-                         <td class="row_left" >Nguyên quán (<span style="color:#F00">*</span>): </td>
-                         <td class="row_right" ><input type="text" size="40" id="nguyenquan" name="txtnguyenquan" placeholder="Tỉnh thành trên CMND"  /></td>
-                     </tr>
-
-                     <!-- Ảnh bằng cấp -->
-                     <!-- <tr class="row" >
-                     <td class="row_left" >Ảnh bằng cấp: </td>
-                     <td class="row_right" ><p> <input type="file" name="txtanhbangcap" id="anhbangcap" /> </p>
-                            <p> <i> Gia sư nên cập nhật hình ảnh bằng cấp vào hồ sơ để tăng khả nắng được 						chọn và nhận lớp </i> </p>
-    </td>
-                     </tr> -->
-
-                     <!--Trình độ  -->
-                     <tr class="row" >
-                         <td class="row_left" >Trình độ (<span style="color:#F00">*</span>): </td>
-                         <!--<td class="row_right" ><select name="txttrinhdo" id="trinhdo"></select></td> -->
-                         <td class="row_right" ><select name="txttrinhdo"  id="trinhdo">
-                             <option value="Giáo Viên" >Giáo Viên</option>
-                             <option value="Sinh Viên"> Sinh Viên</option>
-                             <option value="Cử Nhân">Cử Nhân</option>
-                             <option value="Kỹ Sư" >Kỹ Sư</option>
-                             <option value="Thạc Sỹ">Thạc Sỹ</option>
-                             <option value="Tiến Sỹ">Tiến Sỹ</option>
-                             <option value="Giảng Viên">Giảng Viên</option>
-                             <option value="Bằng Cấp Khác">Bằng Cấp Khác</option>
-                         </select>
-                         </td>
-                     </tr>
-
-
-                     <!-- Năm tốt nghiệp -->
-                     <tr class="row" >
-                         <td class="row_left" >Năm tốt nghiệp (<span style="color:#F00">*</span>): </td>
-                         <td class="row_right" ><select name="txtnamtotnghiep" id="namtotnghiep" ></select></td>
-                     </tr>
-
-                     <!-- Chuyên ngành -->
-                     <tr class="row" >
-                         <td class="row_left" >Chuyên ngành (<span style="color:#F00">*</span>): </td>
-                         <td class="row_right" ><input type="text" size="20" id="tenchuyennganh" name="txttenchuyennganh" /></td>
-                     </tr>
-
-
-                     <!--Trường -->
-                     <tr class="row" >
-                         <td class="row_left" >Trường(<span style="color:#F00">*</span>): </td>
-                         <td class="row_right" ><input type="text" size="20" id="tentruong" name="txttentruong" /></td>
-                     </tr>
-
-                     <!-- Ưu điểm -->
-                     <tr class="row" >
-                         <td class="row_left" >Ưu Điểm: </td>
-                         <td class="row_right" ><textarea id="uudiem" rows="5" cols="50" name="txtuudiem" placeholder=" Thông tin chi tiết về bản thân, kinh nghiệm và thành tích đạt được trong việc học và dạy kèm" class="uudiem" ></textarea></td>
-                     </tr>
-
-                     <!--Lương tối thiểu  -->
-                     <tr class="row" >
-                         <td class="row_left" >Lương tối thiểu(<span style="color:#F00">*</span>): </td>
-                         <td class="row_right" ><input type="text" id="luongtoithieu" name="txtluongtoithieu" placeholder="Tính bằng VND" /></td>
-                     </tr>
+                 
+                 <!--Họ tên -->
+                 <tr class="row">
+                 <td class="row_left" >
+                 Họ tên (<span style="color:#F00">*</span>):
+                 </td>
+                 <td class="row_right"><span><input type="text" size="20" id="ho" name="txtho" placeholder=" Nguyễn Văn"  /></span> <span><input type="text" size="10" id="ten" name="txtten" placeholder="An"  /></span></td>
+                 </tr>              
+                 
+                 <!-- Giới tính -->
+                 <tr class="row" >
+                 <td class="row_left" >Giới tính (<span style="color:#F00">*</span>): </td>
+                 <td class="row_right" ><select name="txttioitinh"  id="gioitinh">
+                        	<option value="Nam" >Nam</option>
+                            <option value="Nữ"> Nữ</option>
+                                <option value="Khac">Khác</option>
+                        </select>
+				</td>
+                 </tr>
+                 
+                 <!-- Ngày Sinh -->
+                 <tr class="row" >
+                 <td class="row_left" >Ngày sinh (<span style="color:#F00">*</span>): </td>
+                 <td class="row_right"><input type="date" name="txtngaysinh" id="NgaySinh" /></td>
+                 </tr>
+                 
+                 
+                 <!-- Số điện thoại-->
+                 <tr class="row" >
+                 <td class="row_left" >Số điện thoại (<span style="color:#F00">*</span>):</td>
+                 <td class="row_right" >	<input type="text" size="20" id="sodienthoai" name="txtsodienthoai" /></td>
+                 </tr>
+                 
+                 <!-- Số cmnd -->
+                 <tr class="row" >
+                 <td class="row_left" >Số cmnd (<span style="color:#F00">*</span>): </td>
+                 <td class="row_right"><input type="text" size="20" name="txtcmnd" id="Socmnd" /></td>
+                 </tr>
+                 
+                 <!-- Ảnh thẻ -->
+                 <tr class="row" >
+                 <td  class="row_left" >Ảnh thẻ (<span style="color:#F00">*</span>): </td>
+                 <td class="row_right" ><input type="file" name="txtanhthe" id="anhthe" /> </td>
+                 </tr>
+                 
+                 <!-- Email -->
+                 <tr class="row" >
+                 <td class="row_left" >Email (<span style="color:#F00">*</span>): </td>
+                 <td class="row_right" ><input type="text" size="20" id="email" name="txtemail" /></td>
+                 </tr>
+                 
+                 <!-- Địa chỉ hiện tại-->
+                 <tr class="row" >
+                 <td class="row_left" >Địa chỉ hiện tại (<span style="color:#F00">*</span>): </td>
+                 <td class="row_right" ><input type="text" size="40" id="diachihientai" name="txtdiachihientai" /></td>
+                 </tr>
+                 
+                 <!-- Nguyên Quán -->
+                 <tr class="row" >
+                 <td class="row_left" >Nguyên quán (<span style="color:#F00">*</span>): </td>
+                 <td class="row_right" ><input type="text" size="40" id="nguyenquan" name="txtnguyenquan" placeholder="Tỉnh thành trên CMND"  /></td>
+                 </tr>
+                 
+                 <!-- Ảnh bằng cấp -->
+                 <!-- <tr class="row" >
+                 <td class="row_left" >Ảnh bằng cấp: </td>
+                 <td class="row_right" ><p> <input type="file" name="txtanhbangcap" id="anhbangcap" /> </p>
+                        <p> <i> Gia sư nên cập nhật hình ảnh bằng cấp vào hồ sơ để tăng khả nắng được 						chọn và nhận lớp </i> </p>
+</td>
+                 </tr> -->
+                 
+                 <!--Trình độ  -->
+                 <tr class="row" >
+                 <td class="row_left" >Trình độ (<span style="color:#F00">*</span>): </td>
+                 <!--<td class="row_right" ><select name="txttrinhdo" id="trinhdo"></select></td> -->
+                 <td class="row_right" ><select name="txttrinhdo"  id="trinhdo">
+                        	<option value="Giáo Viên" >Giáo Viên</option>
+                            <option value="Sinh Viên"> Sinh Viên</option>
+                            <option value="Cử Nhân">Cử Nhân</option>
+                            <option value="Kỹ Sư" >Kỹ Sư</option>
+                            <option value="Thạc Sỹ">Thạc Sỹ</option>
+                            <option value="Tiến Sỹ">Tiến Sỹ</option>
+                            <option value="Giảng Viên">Giảng Viên</option>
+                            <option value="Bằng Cấp Khác">Bằng Cấp Khác</option>
+                        </select>
+</td>
+                 </tr>
+                 
+                 
+                 <!-- Năm tốt nghiệp -->
+                 <tr class="row" >
+                 <td class="row_left" >Năm tốt nghiệp (<span style="color:#F00">*</span>): </td>
+                 <td class="row_right" ><select name="txtnamtotnghiep" id="namtotnghiep" ></select></td>
+                 </tr>
+                 
+                 <!-- Chuyên ngành -->
+                 <tr class="row" >
+                 <td class="row_left" >Chuyên ngành (<span style="color:#F00">*</span>): </td>
+                 <td class="row_right" ><input type="text" size="20" id="tenchuyennganh" name="txttenchuyennganh" /></td>
+                 </tr>
+                 
+                 
+                 <!--Trường -->
+                 <tr class="row" >
+                 <td class="row_left" >Trường(<span style="color:#F00">*</span>): </td>
+                 <td class="row_right" ><input type="text" size="20" id="tentruong" name="txttentruong" /></td>
+                 </tr>
+                 
+                 <!-- Ưu điểm -->
+                 <tr class="row" >
+                 <td class="row_left" >Ưu Điểm: </td>
+                 <td class="row_right" ><textarea id="uudiem" rows="5" cols="50" name="txtuudiem" placeholder=" Thông tin chi tiết về bản thân, kinh nghiệm và thành tích đạt được trong việc học và dạy kèm" class="uudiem" ></textarea></td>
+                 </tr>
+                 
+                 <!--Trường -->
+                 <tr class="row" >
+                 <td class="row_left" >Lương tối thiểu(<span style="color:#F00">*</span>): </td>
+                 <td class="row_right" ><input type="text" id="luongtoithieu" name="txtluongtoithieu" /></td>
+                 </tr>
                  
                  <!-- Môn dạy -->
                  <tr class="row" >
@@ -247,7 +248,7 @@ body,td,th {
                  <!-- Lớp dạy -->
                  <tr class="row" >
                  <td class="row_left" >Lớp dạy(<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" >                    <table border="0" style="font-weight:bold; width:400px" id="tblCheckLop">
+                 <td class="row_right" ><table border="0" style="font-weight:bold; width:400px" id="tblCheckLop">
                     <tbody>
                     <tr>
                     	<td><input type="checkbox" name="txtlopday" value="1" id="checklop1" />
@@ -394,13 +395,12 @@ body,td,th {
                     </tr>
                     </tbody>
                     </table>
-</td>
+					</td>
                  </tr>
-                     <!-- Submit -->
-
-                   
+                 <!-------- Submit -------->
                  </table>
                     <input type="submit" value="Gửi" class="btn_submit"/>
+                </form>
                 </form>
                 </section>
         </div>
@@ -408,7 +408,7 @@ body,td,th {
 
 
 
-    <div class="main_trangchu_right">
+    <div class="main_trangchu_right">s
         <div class="right1_boxlogin">
             <div class="title_boxGSTB">
                 <p style="font-size: 18px; color: white;font-weight: bold;  text-align: center; padding-top: 10px; padding-bottom: 10px; margin-bottom: 20px"> GIA SƯ ĐĂNG NHẬP </p>
