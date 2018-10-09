@@ -44,10 +44,12 @@ body,td,th {
                        <li>
                           <div class="name"> Tên tài khoản: </div>
                                 <input type="text" class="name_acc" name='txttendangnhap'id="name_acc" size="30"/>
+                                <span class="error"> <?php echo $tendangnhapErr;?> </span>
                        </li>
                        <li>
                            <div class="password">Mật khẩu tài khoản: </div>
                                 <input type="password" class="pass_acc" name="txtmatkhau" id="pass_acc" size="30"/>
+                                <span class="error"> <?php echo $matkhauErr;?> </span>
                        </li>
                        <li><input type="submit" class="btn_dk" value="Đăng kí"/></li>
                      </ul>
@@ -63,6 +65,8 @@ body,td,th {
                  Họ tên (<span style="color:#F00">*</span>):
                  </td>
                  <td class="row_right"><span><input type="text" size="20" id="ho" name="txtho" placeholder=" Nguyễn Văn"  /></span> <span><input type="text" size="10" id="ten" name="txtten" placeholder="An"  /></span></td>
+                 <span class="error"> <?php echo $hoErr;?> </span>
+                 <span class="error"> <?php echo $tenErr;?> </span>
                  </tr>              
                  
                  <!-- Giới tính -->
@@ -73,50 +77,58 @@ body,td,th {
                             <option value="Nữ"> Nữ</option>
                                 <option value="Khac">Khác</option>
                         </select>
+                        <span class="error"> <?php echo $gioitinhErr;?> </span>
 				</td>
                  </tr>
                  
                  <!-- Ngày Sinh -->
                  <tr class="row" >
                  <td class="row_left" >Ngày sinh (<span style="color:#F00">*</span>): </td>
-                 <td class="row_right"><input type="date" name="txtngaysinh" id="NgaySinh" /></td>
+                 <td class="row_right"><input type="date" name="txtngaysinh" id="NgaySinh" />
+                 						<span class="error"> <?php echo $ngaysinhErr;?> </span></td>
                  </tr>
                  
                  
                  <!-- Số điện thoại-->
                  <tr class="row" >
                  <td class="row_left" >Số điện thoại (<span style="color:#F00">*</span>):</td>
-                 <td class="row_right" >	<input type="text" size="20" id="sodienthoai" name="txtsodienthoai" /></td>
+                 <td class="row_right" ><input type="text" size="20" id="sodienthoai" name="txtsodienthoai" />
+                 						<span class="error"> <?php echo $sodienthoaiErr;?> </span></td>
                  </tr>
                  
                  <!-- Số cmnd -->
                  <tr class="row" >
                  <td class="row_left" >Số cmnd (<span style="color:#F00">*</span>): </td>
-                 <td class="row_right"><input type="text" size="20" name="txtcmnd" id="Socmnd" /></td>
+                 <td class="row_right"><input type="text" size="20" name="txtcmnd" id="Socmnd" />
+                 <span class="error"> <?php echo $cmndErr;?> </span></td>
                  </tr>
                  
                  <!-- Ảnh thẻ -->
                  <tr class="row" >
                  <td  class="row_left" >Ảnh thẻ (<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" ><input type="file" name="txtanhthe" id="anhthe" /> </td>
+                 <td class="row_right" ><input type="file" name="txtanhthe" id="anhthe" /> 
+                 						<span class="error"> <?php echo $anhtheErr;?> </span></td>
                  </tr>
                  
                  <!-- Email -->
                  <tr class="row" >
                  <td class="row_left" >Email (<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" ><input type="text" size="20" id="email" name="txtemail" /></td>
+                 <td class="row_right" ><input type="text" size="20" id="email" name="txtemail" />
+                 						<span class="error"> <?php echo $emailErr;?> </span></td>
                  </tr>
                  
                  <!-- Địa chỉ hiện tại-->
                  <tr class="row" >
                  <td class="row_left" >Địa chỉ hiện tại (<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" ><input type="text" size="40" id="diachihientai" name="txtdiachihientai" /></td>
+                 <td class="row_right" ><input type="text" size="40" id="diachihientai" name="txtdiachihientai" />
+                 						<span class="error"> <?php echo $diachihientaiErr;?> </span></td>
                  </tr>
                  
                  <!-- Nguyên Quán -->
                  <tr class="row" >
                  <td class="row_left" >Nguyên quán (<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" ><input type="text" size="40" id="nguyenquan" name="txtnguyenquan" placeholder="Tỉnh thành trên CMND"  /></td>
+                 <td class="row_right" ><input type="text" size="40" id="nguyenquan" name="txtnguyenquan" placeholder="Tỉnh thành trên CMND"  />
+                 						<span class="error"> <?php echo $nguyenquanErr;?> </span></td>
                  </tr>
                  
                  <!-- Ảnh bằng cấp -->
@@ -141,27 +153,31 @@ body,td,th {
                             <option value="Giảng Viên">Giảng Viên</option>
                             <option value="Bằng Cấp Khác">Bằng Cấp Khác</option>
                         </select>
-</td>
-                 </tr>
+                    <span class="error"> <?php echo $trinhdoErr;?> </span>
+				</td>
+                </tr>
                  
                  
                  <!-- Năm tốt nghiệp -->
                  <tr class="row" >
                  <td class="row_left" >Năm tốt nghiệp (<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" ><select name="txtnamtotnghiep" id="namtotnghiep" ></select></td>
+                 <td class="row_right" ><select name="txtnamtotnghiep" id="namtotnghiep" ></select>
+                 						<span class="error"> <?php echo $namtotnghiepErr;?> </span></td>
                  </tr>
                  
                  <!-- Chuyên ngành -->
                  <tr class="row" >
                  <td class="row_left" >Chuyên ngành (<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" ><input type="text" size="20" id="tenchuyennganh" name="txttenchuyennganh" /></td>
+                 <td class="row_right" ><input type="text" size="20" id="tenchuyennganh" name="txttenchuyennganh" />
+                 						<span class="error"> <?php echo $chuyennganhErr;?> </span></td>
                  </tr>
                  
                  
                  <!--Trường -->
                  <tr class="row" >
                  <td class="row_left" >Trường(<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" ><input type="text" size="20" id="tentruong" name="txttentruong" /></td>
+                 <td class="row_right" ><input type="text" size="20" id="tentruong" name="txttentruong" />
+                 						<span class="error"> <?php echo $truongErr;?> </span></td>
                  </tr>
                  
                  <!-- Ưu điểm -->
@@ -170,10 +186,11 @@ body,td,th {
                  <td class="row_right" ><textarea id="uudiem" rows="5" cols="50" name="txtuudiem" placeholder=" Thông tin chi tiết về bản thân, kinh nghiệm và thành tích đạt được trong việc học và dạy kèm" class="uudiem" ></textarea></td>
                  </tr>
                  
-                 <!--Trường -->
+                 <!--Lương tối thiểu -->
                  <tr class="row" >
                  <td class="row_left" >Lương tối thiểu(<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" ><input type="text" id="luongtoithieu" name="txtluongtoithieu" /></td>
+                 <td class="row_right" ><input type="text" id="luongtoithieu" name="txtluongtoithieu" />
+                 						<span class="error"> <?php echo $luongtoithieuErr;?> </span></td>
                  </tr>
                  
                  <!-- Môn dạy -->
@@ -241,8 +258,9 @@ body,td,th {
 						</td>
                     </tr>
                     </tbody>
+                    <span class="error"> <?php echo $mondayErr;?> </span>
                     </table>
-</td>
+					</td>
                  </tr>
                  
                  <!-- Lớp dạy -->
@@ -306,6 +324,7 @@ body,td,th {
 						</td>
                     </tr>
                     </tbody>
+                    <span class="error"> <?php echo $lopdayErr;?> </span>
                     </table>
 </td>
                  </tr>
@@ -394,6 +413,7 @@ body,td,th {
 						</td>
                     </tr>
                     </tbody>
+                    <span class="error"> <?php echo $thoigiandayErr;?> </span>
                     </table>
 					</td>
                  </tr>
