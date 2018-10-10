@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+4<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -42,28 +42,34 @@
                 <table class="tblform" border="0px" width="600px"  >
                  <!--Họ tên -->
             	 <tr class="row">
-                 <td width="100" class="row_left" >
+                 <td class="row_left" >
                  Họ tên (<span style="color:#F00">*</span>):
                  </td>
-                 <td class="row_right"><span><input type="text" size="20" id="ho" name="txtho" placeholder=" Nguyễn Văn"  /></span> <span><input type="text" size="10" id="ten" name="txtten" placeholder="An"  /></span></td>
+                 <td class="row_right"><span><input type="text" size="20" id="ho" name="txtho" placeholder=" Nguyễn Văn"  /></span>               					
+                 						<span><input type="text" size="10" id="ten" name="txtten" placeholder="An" /></span>
+                                        <span class="error"> <?php echo $hoErr;?> </span> 
+                                        <span class="error"> <?php echo $tenErr;?> </span> </td>
                  </tr>         
                
                  <!-- Địa chỉ hiện tại-->
                  <tr class="row" >
                  <td class="row_left" >Địa chỉ hiện tại (<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" ><input type="text" size="40" id="diachihientai" name="txtdiachihientai" /></td>
+                 <td class="row_right" ><input type="text" size="40" id="diachihientai" name="txtdiachihientai" />
+                 				<span class="error"> <?php echo $diachihientaiErr;?> </span></td>
                  </tr>
                  
                  <!-- Số điện thoại-->
                  <tr class="row" >
                  <td class="row_left" >Số điện thoại (<span style="color:#F00">*</span>):</td>
-                 <td class="row_right" >	<input type="text" size="20" id="sodienthoai" name="txtsodienthoai" /></td>
+                 <td class="row_right" ><input type="text" size="20" id="sodienthoai" name="txtsodienthoai" />
+                 						<span class="error"> <?php echo $sodienthoaiErr;?> </span></td>
                  </tr>
                  
                  <!-- Email -->
                  <tr class="row" >
                  <td class="row_left" >Email (<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" ><input type="text" size="20" id="email" name="txtemail" /></td>
+                 <td class="row_right" ><input type="text" size="20" id="email" name="txtemail" />
+                 						<span class="error"> <?php echo $emailErr;?> </span></td>
                  </tr>
                  
                 
@@ -133,13 +139,15 @@
 						</td>
                     </tr>
                     </tbody>
+                    <span class="error"> <?php echo $lophocErr;?> </span>
                     </table>
 					</td>
                  </tr>
                  
                  <!-- Số lượng người học -->
                  <td class="row_left" >Số người học (<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" ><input type="text" size="20" id="SoLuong" name="SoLuong" /></td>
+                 <td class="row_right" ><input type="text" size="20" id="songuoihoc" name="txtsonguoihoc" />
+                 						<span class="error"> <?php echo $songuoihocErr;?> </span></td>
                  </tr>
                  
                  <!-- Môn học -->
@@ -207,19 +215,21 @@
 						</td>
                     </tr>
                     </tbody>
+                    <span class="error"> <?php echo $monhocErr;?> </span>
                     </table>
 					</td>
                  </tr>
                  
 				 <!-- Học lực hiện tại -->
                  <td class="row_left" >Học lực hiện tại : </td>
-                 <td class="row_right" ><input type="text" size="20" id="HocLucHienTai" name="HocLucHienTai" /></td>
+                 <td class="row_right" ><input type="text" size="20" id="HocLucHienTai" name="HocLucHienTai" />
+                 						<span class="error"> <?php echo $hocluchientaiErr;?> </span></td>
                  </tr>
                  
                  <!-- Thời gian học -->
                  <tr class="row" >
                  <td class="row_left" >Thời gian học(<span style="color:#F00">*</span>): </td>
-                 <td class="row_right" >                    <table border="0" style="font-weight:bold; width:400px" id="tblCheckThoigian">
+                 <td class="row_right" ><table border="0" style="font-weight:bold; width:400px" id="tblCheckThoigian">
                     <tbody>
                     <tr>
                     	<td><input type="checkbox" value="1" name="txtthoigianhoc" id="checktime2S" />
@@ -297,9 +307,9 @@
                     	<td><input type="checkbox" name="txtthoigianhoc" id="checktimeCnT" value="15"/>
                                 <label for>CN- B.Tối</label>
 						</td>
-                    </tr>
-                   
+                    </tr>                  
                     </tbody>
+                    <span class="error"> <?php echo $thoigianhocErr;?> </span>
                     </table>
 					</td>
                  </tr>
