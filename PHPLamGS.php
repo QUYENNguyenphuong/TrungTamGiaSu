@@ -8,31 +8,33 @@
 <body>
 	<?php
 // define variables and set to empty values
-$tendangnhapErr = $matkhauErr = $hoErr = $tenErr = $ngaysinhErr = $gioitinhErr = $nguyenquanErr = $diachihientaiErr = $sodienthoaiErr = $emailErr = $anhtheErr = $trinhdoErr = $namtotnghiepErr = $chuyennganhErr = $truongErr  = $mondayErr = $lopdayErr = $thoigiandayErr = "";
+//$tendangnhapErr = $matkhauErr =
+$hoErr = $tenErr = $ngaysinhErr = $gioitinhErr = $nguyenquanErr = $diachihientaiErr = $sodienthoaiErr = $emailErr = $anhtheErr = $trinhdoErr = $namtotnghiepErr = $chuyennganhErr = $truongErr  = $mondayErr = $lopdayErr = $thoigiandayErr = "";
 
-$tendangnhap = $matkhau = $ho = $ten = $ngaysinh = $gioitinh = $nguyenquan = $diachihientai = $sodienthoai = $email = $anhthe = $trinhdo = $namtotnghiep = $chuyennganh = $truong = $uudiem = $monday = $lopday = $thoigianday = "";
+//$tendangnhap = $matkhau =
+$ho = $ten = $ngaysinh = $gioitinh = $nguyenquan = $diachihientai = $sodienthoai = $email = $anhthe = $trinhdo = $namtotnghiep = $chuyennganh = $truong = $uudiem = $monday = $lopday = $thoigianday = "";
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	// tên đăng nhập
-	if (empty($_POST["$tendangnhap"])) {
-    $tendangnhapErr = "Ten dang nhap is required";
-  } else {
-    $tendangnhap = test_input($_POST["tendangnhap"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z ]*$/",$tendangnhap)) {
-      $tendangnhapErr = "Only letters and white space allowed"; 
-    }
-  }  
-  	// mật khẩu
-  	if (empty($_POST["$matkhau"])) {
-    $matkhauErr = "Mat khau is required";
-  } else {
-    $matkhau = test_input($_POST["matkhau"]);
-    if (!preg_match("/^[a-zA-Z ]*$/",$matkhau)) {
-      $matkhauErr = "Only letters and white space allowed"; 
-    }
-  }  
+//	if (empty($_POST["$tendangnhap"])) {
+//    $tendangnhapErr = "Ten dang nhap is required";
+//  } else {
+//    $tendangnhap = test_input($_POST["tendangnhap"]);
+//    // check if name only contains letters and whitespace
+//    if (!preg_match("/^[a-zA-Z ]*$/",$tendangnhap)) {
+//      $tendangnhapErr = "Only letters and white space allowed";
+//    }
+//  }
+//  	// mật khẩu
+//  	if (empty($_POST["$matkhau"])) {
+//    $matkhauErr = "Mat khau is required";
+//  } else {
+//    $matkhau = test_input($_POST["matkhau"]);
+//    if (!preg_match("/^[a-zA-Z ]*$/",$matkhau)) {
+//      $matkhauErr = "Only letters and white space allowed";
+//    }
+//  }
   // họ
   if (empty($_POST["ho"])) {
     $hoErr = "Ho is required";
